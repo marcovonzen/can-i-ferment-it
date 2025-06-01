@@ -28,7 +28,7 @@ export default function CanIFermentIt() {
           height={120}
           className="rounded-xl"
         />
-        <h1 className="text-5xl font-bold text-[#8A4B2F] underline">Can I Ferment It?</h1>
+        <h1 className="text-5xl font-bold text-[#8A4B2F]">Can I Ferment It?</h1>
       </motion.div>
 
       <motion.p
