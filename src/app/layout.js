@@ -1,3 +1,4 @@
+import "./globals.css";
 /** @type {import('next').Metadata} */
 export const metadata = {
   title: "Can I Ferment It?",
