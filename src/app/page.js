@@ -14,7 +14,7 @@ export default function CanIFermentIt() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F1E9E2] flex flex-col items-center justify-center p-6 text-center">
+    <main className="min-h-screen bg-green-100 text-center p-6">
       <motion.div
         className="flex flex-col items-center gap-4 mb-6"
         initial={{ opacity: 0, y: -20 }}
