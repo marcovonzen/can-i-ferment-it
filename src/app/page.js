@@ -85,4 +85,4 @@ export default function CanIFermentIt() {
   );
 }
 // This code is a React component for a fermentation advice app.
-// It allows users to ask questions about fermenting various foods and provides a playful response.
+// It allows users to ask questions about fermenting various foods and provides a playful response
