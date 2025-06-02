@@ -14,7 +14,7 @@ export default function CanIFermentIt() {
   };
 
   return (
-    <main className="min-h-screen bg-orange-50 text-center px-4 py-10 flex flex-col items-center">
+    <main className="min-h-screen bg-orange-50 text-center p-6 flex flex-col items-center">
       <motion.div
         className="flex flex-col items-center gap-4 mb-6"
         initial={{ opacity: 0, y: -20 }}
@@ -24,8 +24,8 @@ export default function CanIFermentIt() {
         <img
           src="https://i.ibb.co/q352w496/Screenshot-2025-05-31-111036.png"
           alt="Fermentalist Logo"
-          width={140}
-          height={140}
+          width={120}
+          height={120}
           className="rounded-2xl shadow-md"
         />
         <h1 className="text-5xl font-bold text-[#8A4B2F]">Can I Ferment It?</h1>
@@ -35,7 +35,7 @@ export default function CanIFermentIt() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-lg text-[#8A4B2F] max-w-xl mb-8"
+        className="text-lg text-[#8A4B2F] max-w-xl mb-6"
       >
         Ask anything about fermentation — whether it’s your forgotten kiwi, suspicious mango, or mushroom mystery. The Fermentalist Buddy is here to help.
       </motion.p>
@@ -46,13 +46,13 @@ export default function CanIFermentIt() {
         transition={{ delay: 0.6, duration: 0.5 }}
         className="w-full max-w-xl"
       >
-        <div className="shadow-lg border border-[#7E8F64] bg-white rounded-xl p-6">
+        <div className="shadow-xl border-2 border-[#8A4B2F] bg-white rounded-xl p-6">
           <input
             type="text"
             placeholder="Can I ferment my leftover strawberries?"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            className="p-3 border rounded text-[#8A4B2F] border-[#A4A4A4] focus:outline-none w-full mb-4"
+            className="p-3 border border-[#A4A4A4] rounded w-full text-[#8A4B2F] mb-4 focus:outline-none"
           />
           <button
             onClick={handleAsk}
@@ -70,13 +70,13 @@ export default function CanIFermentIt() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.5 }}
-        className="mt-10"
+        className="mt-8"
       >
         <a
           href="https://instagram.com/imthefermentalist"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-[#D9A441] hover:underline"
+          className="flex items-center gap-2 text-[#D9A441] hover:underline justify-center"
         >
           <Instagram size={20} /> @imthefermentalist
         </a>
