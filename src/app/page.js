@@ -14,7 +14,7 @@ export default function CanIFermentIt() {
   };
 
   return (
-    <main className="min-h-screen bg-green-100 text-center p-6">
+    <main className="min-h-screen bg-orange-50 text-center px-4 py-10 flex flex-col items-center">
       <motion.div
         className="flex flex-col items-center gap-4 mb-6"
         initial={{ opacity: 0, y: -20 }}
@@ -24,9 +24,9 @@ export default function CanIFermentIt() {
         <img
           src="https://i.ibb.co/q352w496/Screenshot-2025-05-31-111036.png"
           alt="Fermentalist Logo"
-          width={120}
-          height={120}
-          className="rounded-xl"
+          width={140}
+          height={140}
+          className="rounded-2xl shadow-md"
         />
         <h1 className="text-5xl font-bold text-[#8A4B2F]">Can I Ferment It?</h1>
       </motion.div>
@@ -35,7 +35,7 @@ export default function CanIFermentIt() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-lg text-[#8A4B2F] max-w-xl mb-6"
+        className="text-lg text-[#8A4B2F] max-w-xl mb-8"
       >
         Ask anything about fermentation — whether it’s your forgotten kiwi, suspicious mango, or mushroom mystery. The Fermentalist Buddy is here to help.
       </motion.p>
@@ -46,7 +46,7 @@ export default function CanIFermentIt() {
         transition={{ delay: 0.6, duration: 0.5 }}
         className="w-full max-w-xl"
       >
-        <div className="shadow-xl border-2 border-[#7E8F64] bg-white rounded p-6">
+        <div className="shadow-lg border border-[#7E8F64] bg-white rounded-xl p-6">
           <input
             type="text"
             placeholder="Can I ferment my leftover strawberries?"
@@ -56,7 +56,7 @@ export default function CanIFermentIt() {
           />
           <button
             onClick={handleAsk}
-            className="bg-[#D96459] hover:bg-[#8A4B2F] text-white px-4 py-2 rounded font-semibold"
+            className="bg-[#D96459] hover:bg-[#8A4B2F] text-white px-4 py-2 rounded font-semibold w-full"
           >
             Ask The Fermentalist Buddy
           </button>
@@ -70,7 +70,7 @@ export default function CanIFermentIt() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.5 }}
-        className="mt-8"
+        className="mt-10"
       >
         <a
           href="https://instagram.com/imthefermentalist"
@@ -84,5 +84,3 @@ export default function CanIFermentIt() {
     </main>
   );
 }
-// This code is a React component for a fermentation advice app.
-// It allows users to ask questions about fermenting various foods and provides a playful response
