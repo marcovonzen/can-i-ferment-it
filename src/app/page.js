@@ -46,20 +46,21 @@ export default function CanIFermentIt() {
         transition={{ delay: 0.6, duration: 0.5 }}
         className="w-full max-w-xl"
       >
-        <div className="shadow-xl border-2 border-[#8A4B2F] bg-white rounded-xl p-6">
-          <input
-            type="text"
-            placeholder="Can I ferment my leftover strawberries?"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            className="p-3 border border-[#A4A4A4] rounded w-full text-[#8A4B2F] mb-4 focus:outline-none"
-          />
-          <button
-            onClick={handleAsk}
-            className="bg-[#D96459] hover:bg-[#8A4B2F] text-white px-4 py-2 rounded font-semibold w-full"
-          >
-            Ask The Fermentalist Buddy
-          </button>
+          <div className="flex flex-col gap-3">
+              <input
+                type="text"
+                placeholder="Can I ferment my leftover strawberries?"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                className="p-3 border border-[#A4A4A4] rounded text-[#8A4B2F] focus:outline-none"
+              />
+              <button
+                onClick={handleAsk}
+                className="bg-[#D96459] hover:bg-[#8A4B2F] text-white px-4 py-2 rounded font-semibold"
+              >
+                Ask The Fermentalist Buddy
+              </button>
+          </div>
           {response && (
             <p className="text-[#7E8F64] mt-4">{response}</p>
           )}
